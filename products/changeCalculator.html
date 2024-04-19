@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/changeCalculator.css">
+    <script src="/scripts/changeCalculator.js"></script>
+    <title>The change Calculator</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Week 5 - Change Calculator</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="apCalculator.html">Area & Perimeter Calculator</a></li>
+                    <li><a href="tempConvertor.html">Temperature Convertor</a></li>
+                    <li><a href="gradeConvertor.html">Grade Convertor</a></li>
+                    <li><a href="changeCalculator.html">Change Convertor</a></li>
+                    <li><a href="MPGCalc.html">MPG Calc with Functions</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div>
+                    <p>
+                        In this exercise, you'll develop an application that tells how many quarters,
+                        dimes, nickles, and pennies are need to make change for any amount of change
+                        from 0 to 99 cents. One way to get the results is to use the divide and modulus operators
+                        along with the parseInt() method for truncating the results so they are whole number.
+                    </p>
+                </div>
+                <div id="layoutCalculator">
+                    <h2>Change Calculator</h2>
+
+                    <label for="cents">Enter total amount of change (must be >= 0):</label>
+                    <input type="text" id="cents" />
+                    <input type="button" value="Make Change" name="calculate" id="calculate" /><br><br>
+
+                    <label>Quarters:</label>
+                    <input type="text" id="quarters" disabled><br>
+
+                    <label>Dimes:</label>
+                    <input type="text" id="dimes" disabled><br>
+
+                    <label>Nickels:</label>
+                    <input type="text" id="nickels" disabled><br>
+
+                    <label>Pennies:</label>
+                    <input type="text" id="pennies" disabled><br>
+                </div>
+                <audio id="myAudio">
+                    <source src="/sounds/coin.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </main>
+        </div>
+        <footer>
+            <p>
+                Copyright &copy; 2024 Nguyen, Thien (JavaScript's Assignment)
+                <a href="https://github.com/bluestar7589" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nguyen-thien-5b2a5972/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

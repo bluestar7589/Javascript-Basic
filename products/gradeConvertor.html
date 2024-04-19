@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/gradeConvertor.js"></script>
+    <title>Grade Convertor</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Week 3 - Grade Convertor</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="apCalculator.html">Area & Perimeter Calculator</a></li>
+                    <li><a href="tempConvertor.html">Temperature Convertor</a></li>
+                    <li><a href="gradeConvertor.html">Grade Convertor</a></li>
+                    <li><a href="changeCalculator.html">Change Convertor</a></li>
+                    <li><a href="MPGCalc.html">MPG Calc with Functions</a></li>
+                </ul>
+            </nav>
+            <main>
+
+                <!-- Instruction for assignment-->
+                <div>
+                    <p>This assignment will give you practice with your control structures. The user will either enter a
+                        number, or enter a letter representing the grade they achieved. Use a textbox to get user input.
+                    </p>
+                    <p>If the user enters a number, you should display the corresponding grade in an alert box or on the
+                        web page</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="width: 49.9674%;">Number Range</td>
+                                <td style="width: 49.9674%;">Grade Output</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.9674%;">88 – 100</td>
+                                <td style="width: 49.9674%;">A</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.9674%;">80 – 87</td>
+                                <td style="width: 49.9674%;">B</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.9674%;">68 – 79</td>
+                                <td style="width: 49.9674%;">C</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.9674%;">60 – 67</td>
+                                <td style="width: 49.9674%;">D</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.9674%;">0 – 59</td>
+                                <td style="width: 49.9674%;">F</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 49.9674%;">Numbers that are less than 0 or greater than 100</td>
+                                <td style="width: 49.9674%;">“Invalid number for a grade”.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>*Note: Assume if a number is entered, the number will always be a whole number</p>
+                    <p>If the user enters something that is not a number, you need to check if it’s a valid letter
+                        grade. If it is, then display the correct message.</p>
+                    <table>
+                        <tbody>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">Grade Input</td>
+                                <td style="width: 49.9674%; height: 29px;">Message Output</td>
+                            </tr>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">A</td>
+                                <td style="width: 49.9674%; height: 29px;">Excellent job</td>
+                            </tr>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">B</td>
+                                <td style="width: 49.9674%; height: 29px;">Good Work</td>
+                            </tr>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">C</td>
+                                <td style="width: 49.9674%; height: 29px;">You need to put in more effort</td>
+                            </tr>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">D</td>
+                                <td style="width: 49.9674%; height: 29px;">Uh oh, you should be reading and getting
+                                    assignments in</td>
+                            </tr>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">F</td>
+                                <td style="width: 49.9674%; height: 29px;">&nbsp;Please see the instructor</td>
+                            </tr>
+                            <tr style="height: 29px;">
+                                <td style="width: 49.9674%; height: 29px;">All other string input</td>
+                                <td style="width: 49.9674%; height: 29px;">Invalid grade</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Resources</p>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_isnan.asp" class="external" target="_blank"
+                                rel="noreferrer noopener"><span>isNaN() method</span><span class="external_link_icon"
+                                    style="margin-inline-start: 5px; display: inline-block; text-indent: initial; "
+                                    role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
+                                        style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+                                        <path
+                                            d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="screenreader-only">Links to an external site.</span></span></a></li>
+                    </ul>
+                    <p>When finished, submit all necessary files in a zipped folder</p>
+                </div> 
+
+                
+                <!-- Coding for the request above-->
+                <table>
+                    <tr>
+                        <td><label for="txtGrade">Input number (0-100) or character (a-f):</label> </td>
+                        <td><input type="text" id="txtGrade"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Your grade:</label>
+                        </td>
+                        <td><label id="lblResult"></label> </td>
+                    </tr>
+                </table>
+                <p><input type="button" value="Check" onclick="btnGradeConvertor()"></p>
+               
+            </main>
+        </div>
+        <footer>
+            <p>
+                Copyright &copy; 2024 Nguyen, Thien (JavaScript's Assignment)
+                <a href="https://github.com/bluestar7589" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nguyen-thien-5b2a5972/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

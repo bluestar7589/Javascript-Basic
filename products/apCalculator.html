@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/apCalculator.js" defer></script>
+    <title>Area & Perimeter Calculator</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Week 2 - Area and Perimeter Calculator</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="apCalculator.html">Area & Perimeter Calculator</a></li>
+                    <li><a href="tempConvertor.html">Temperature Convertor</a></li>
+                    <li><a href="gradeConvertor.html">Grade Convertor</a></li>
+                    <li><a href="changeCalculator.html">Change Convertor</a></li>
+                    <li><a href="MPGCalc.html">MPG Calc with Functions</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div>
+                    <p>
+                        For this assignment you will need to create a working area and perimeter calculator. You must create the HTML page and associated JavaScript and turn in a working application.
+                        <br>
+                        <b>Criteria</b>
+                        <br>
+                        Get the width from the user with a textbox (assume user will enter a valid number)<br>
+                        Get the height from the user with a textbox (assume user will enter a valid number)<br>
+                        Add a Calculate button that will calculate the area and perimeter of a rectangle, based on the width and height values the user enters<br>
+                        Display the area and perimeter using an alert() or by outputting text to the HTML page<br>
+                        <b>Above and beyond (this is optional for an extra challenge)</b>
+                        <br>
+                        Draw a rectangle based on the calculated area and perimeter using an HTML Canvas
+                    </p>
+                </div>
+                <div>
+                    <form>
+                        <h4><b>!!! Input number only !!!</b></h4><br>
+                        <label for="txtWidth">Input the weight for the rectangle:</label>
+                        <input type="text" id="txtWidth"><br>
+                        <label for="txtLength">Input the height for the rectangle:</label>
+                        <input type="text" id="txtLength"><br>
+                        <label id="lblResultArea" ></label><br>
+                        <label id="lblResultPerimeter" ></label><br>
+                        <input type="button" id="btnCalculator" value="Calculate" onclick="shapeCalculation()">
+                        <br>
+                        <canvas id="cvShape" ></canvas>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>
+                Copyright &copy; 2024 Nguyen, Thien (JavaScript's Assignment)
+                <a href="https://github.com/bluestar7589" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nguyen-thien-5b2a5972/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

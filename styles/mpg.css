@@ -1,0 +1,35 @@
+/* Set CSS for the calculator's layout in main*/
+body > div > div > main > #layoutCalculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 700px;
+	padding: 0 2em 1em;
+    border: 3px solid blue;
+}
+h2 {
+	color: blue;
+	margin-bottom: .25em;
+}
+label {
+	float: left;
+    width: 11em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+	margin-right: .5em;
+    margin-bottom: .5em;
+    width: 11em;   
+}
+/* Set CSS for span to show error when invalid data is input*/
+span {
+	color: red;
+}
+
+/* Set CSS for the tag p in main*/
+body > div > div > main > div > p {
+    text-align: justify;
+    font-style: italic;
+    margin: 10px 20px 20px 10px;
+}

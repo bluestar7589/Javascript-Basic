@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/mpg.css">
+    <script src="/scripts/mpgCalc.js"></script>
+    <title>MPG Calc with Functions</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Week 6 - MPG Calc with Functions</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="apCalculator.html">Area & Perimeter Calculator</a></li>
+                    <li><a href="tempConvertor.html">Temperature Convertor</a></li>
+                    <li><a href="gradeConvertor.html">Grade Convertor</a></li>
+                    <li><a href="changeCalculator.html">Change Convertor</a></li>
+                    <li><a href="MPGCalc.html">MPG Calc with Functions</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div>
+                    <p>
+                        Objective: The goal of this application is to gain more experience with DOM manipulation and
+                        practice
+                        creating and using functions.
+                        Application: You need to create a MPG calculator that takes the Miles Driven and Gallons of gas
+                        used
+                        from the user. Then display the resulting MPG. DO NOT use alert or prompt to get input or
+                        display
+                        results.
+                    </p>
+                </div>
+                <div id="layoutCalculator">
+                    <h2>Calculate Miles Per Gallon</h2>
+                    <label for="miles">Miles Driven:</label>
+                    <input type="text" id="miles"><span>*</span><br>
+                    <label for="gallons">Gallons of Gas Used:</label>
+                    <input type="text" id="gallons"><span>*</span><br>
+                    <label for="mpg">Miles Per Gallon</label>
+                    <input type="text" id="mpg" disabled><br>
+                    <label>&nbsp;</label>
+                    <input type="button" id="calculate" value="Calculate MPG"><br>
+                    <label>&nbsp;</label>
+                    <input type="button" id="clear" value="Clear Entries" onclick="clearForm()"><br>
+                </div>
+
+            </main>
+        </div>
+        <footer>
+            <p>
+                Copyright &copy; 2024 Nguyen, Thien (JavaScript's Assignment)
+                <a href="https://github.com/bluestar7589" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nguyen-thien-5b2a5972/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

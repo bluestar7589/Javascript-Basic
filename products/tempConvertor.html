@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/tempConvert.js" defer></script>
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Week 2 - Temperature Convertor</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Week 2 - Temperature Convertor</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home Page</a></li>
+                    <li><a href="apCalculator.html">Area & Perimeter Calculator</a></li>
+                    <li><a href="tempConvertor.html">Temperature Convertor</a></li>
+                    <li><a href="gradeConvertor.html">Grade Convertor</a></li>
+                    <li><a href="changeCalculator.html">Change Convertor</a></li>
+                    <li><a href="MPGCalc.html">MPG Calc with Functions</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div>
+                    <p>
+                        You must create a web page and code the necessary JavaScript to convert a temperature given in Fahrenheit into Celsius. All specifications must be met and a working web application must be submitted to get full credit.
+                        <br>
+                        <b>Criteria</b>
+                        <br>
+                        Create a textbox for a user to enter a temperature in Fahrenheit<br>
+                        Add a button that once clicked, will take the given Fahrenheit and convert the value into Celsius.<br>
+                        Display the calculated Celsius temperature in an alert() or somewhere on the web page<br>
+                        <b>Above and beyond (this is optional for an extra challenge)</b>
+                        <br>
+                        Add validation to ensure that Fahrenheit is a valid number.<br>
+                        Style the web page with CSS.<br>
+                        Add functionality to convert Celsius to Fahrenheit.
+                    </p>
+                </div>
+                <div>
+                    <form>
+                        <input type="radio" name="switcher" id="radFToC" checked onclick="changeLayout()">
+                        <label for="radFToC">F To C</label>
+                        <input type="radio" name="switcher" id="radCToF" onclick="changeLayout()">
+                        <label for="radCToF">C To F</label><br>
+                        <h4><b>!!! Input number only !!!</b></h4><br>
+                        <label for="txtTemp" id="lblTempFToC">Input the temperature in Fahrenheit:</label>
+                        <label for="txtTemp" id="lblTempCToF" hidden=>Input the temperature in Celcius:</label>
+                        <input type="text" id="txtTemp"><br>  
+                        <label id="lblFToC"></label><br>
+                        <label id="lblCtoF" hidden></label><br>
+                        <input type="button" id="btnConvert" value="Calculate" onclick="tempConvert()">
+                    </form>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>
+                Copyright &copy; 2024 Nguyen, Thien (JavaScript's Assignment)
+                <a href="https://github.com/bluestar7589" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nguyen-thien-5b2a5972/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Set CSS for the tag p in main*/
+body > div > div > main > div > p {
+    text-align: justify;
+    font-style: italic;
+    margin: 10px 20px 20px 10px;
+}
+
+/* Set up CSS for the layout of calculator*/
+body > div > div > main > #layoutCalculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 600px;
+    border: 3px solid blue;
+    box-shadow: 5px 5px  5px 0 gray;
+}
+/* Set CSS for h1*/
+h2 {
+	color: blue;
+	margin-top: 0;
+}
+main {
+    padding: 1em 2em;
+}
+/* Set CSS for label inside the calculator*/
+label {
+	float: left;
+    width: 16em;
+    text-align: right;
+}
+
+/* Set CSS for input inside the calculator*/
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
