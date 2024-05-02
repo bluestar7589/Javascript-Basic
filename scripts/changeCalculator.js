@@ -73,7 +73,7 @@ function playAudio() {
 // Add picture when changing the change
 function addPicture() {
     var x = document.createElement("IMG");
-    x.setAttribute("src", "/pictures/near.jpg");
+    x.setAttribute("src", "../pictures/near.jpg");
     x.setAttribute("width", "300");
     x.setAttribute("height", "300");
     x.setAttribute("alt", "The Near Protocol");
